@@ -1,0 +1,1448 @@
+
+/*------------------------------------*\
+   CONTENTS
+\*------------------------------------*/
+/*
+SPRITE BACKGROUND
+BASIC CONTENT AND ASIDE COLUMN LAYOUTS 
+FAVOURITES TABLES 
+FAVOURITES FORMS 
+
+*/
+
+/*------------------------------------*\
+   $SPRITE BACKGROUND
+\*------------------------------------*/
+.favourites td.remove a {
+background-image: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/img/spriteGlobal.png);
+}
+
+body.HomePage #content {
+	overflow: visible;
+}
+
+body.HomePage #locationSelector .leavingFrom, .HomePage #locationSelector .goingTo {
+float:left;
+width:290px;
+margin-right:15px;
+}
+
+body.HomePage #locationSelector .leavingFrom label, .HomePage #locationSelector .goingTo label {
+margin:7px 0px;
+display: block;
+font-size: 1.1em;
+}
+
+body.HomePage #locationSelector .leavingFrom label.hint, .HomePage #locationSelector .goingTo label.hint {
+display: inline;	
+margin-right: 15px;
+margin-bottom: 4px;
+}
+
+body.HomePage #locationSelector label.hint input[type=radio] {
+	vertical-align: bottom;
+	margin-right: 2px;
+}
+
+body.HomePage #locationSelector div .hint {
+font-size:85%;
+margin: 5px 0 5px 0;
+
+}
+
+
+body.HomePage #locationSelector #destinationSwitch {
+display:none;
+}
+
+#PlannerControls {
+	position: relative;
+}
+
+.caretaker {
+	margin: 10px 0 0px 0;
+	border: 1px solid #ddd;
+	padding: 5px;
+	background-color: #ffc;
+}
+
+#content .caretaker p {
+	font-size: 0.85714em;
+	color: #111;
+	margin: 0px;
+}
+
+#PlannerControls .leavingFrom .options-container, #PlannerControls .goingTo .options-container{
+	margin-bottom: 3px;
+}
+
+/* todo(Jake): remove if unused */
+/*body.HomePage #locationSelector .submitButton {
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+body.HomePage #locationSelector .map {
+position: absolute;
+top:3px;
+right:36px;
+padding: 20px 0 0 22px;
+font-size:0.9em;	
+display:block;
+min-height:30px;
+background-image:url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/img/spriteGlobal.png);
+background-position:-339px -210px;
+}
+
+body.HomePage #locationSelector .selectBox-dropdown {
+border:0;
+-webkit-border-radius:0;
+-moz-border-radius:0;
+border-radius:0;
+padding-left:5px;
+padding-right:30px;
+}
+
+html.oldie #locationSelector .leavingFrom .selectBox-dropdown{
+padding-left:0px;
+padding-right:5px;	
+}
+
+body.HomePage #locationSelector .dateSelector {
+background-image:url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/img/spriteGlobal.png);
+background-position: -112px -562px;
+text-indent: -9999px;
+direction:ltr;
+display:inline-block;
+padding:5px 0;
+margin-left:-5px;
+width:30px;
+height:15px;
+}
+
+body.HomePage #locationSelector .leavingFrom input[type=text], .HomePage #locationSelector .goingTo input[type=text] {
+border:0;
+color: #333;
+font-size:1.1em;
+padding:7px;
+width:260px;
+}
+	
+body.HomePage #locationSelector .submitButton {
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+color: #FFF;
+font-size:1.4em;
+}
+
+
+body.HomePage #locationSelector {
+color:#FFF;
+min-height:210px;
+}
+
+body.HomePage #locationSelector .searchOptions {
+position:relative;
+top:30px;
+left:15px;
+font-size:85%;
+}
+
+html.oldie body.HomePage #locationSelector .searchOptions{
+	top: 12px;
+}
+
+body.HomePage #locationSelector h2 {
+font-weight:normal;
+font-size:1.4em;
+margin:0 0 10px 0;
+}
+
+body.HomePage #locationSelector a:hover, 
+body.HomePage #locationSelector a:focus {
+text-decoration:none;
+}
+
+body.HomePage #locationSelector a, 
+body.HomePage #locationSelector a:visited {
+color:#FFF;
+}
+
+body.HomePage #locationSelector a.chosen-single, 
+body.HomePage #locationSelector a.chosen-single:visited,
+body.HomePage #locationSelector .chosen-drop {
+color:#000;
+}*/
+
+
+
+body.HomePage .news,
+body.HomePage .promos {
+clear:left;
+padding-bottom:20px;
+overflow:auto;
+}
+
+body.HomePage .promos {
+clear:left;
+padding-top:20px;
+width:621px;
+}
+
+.primaryImage + .promos {
+border-top: 0;
+}
+
+body.HomePage .news .article, 
+body.HomePage .promos .promo,
+body.HomePage .news .primaryArticle {
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+border-radius:4px;
+float:left;
+position:relative;
+background:#EDEDED;
+width:273px;
+padding:15px 15px 0 15px;
+min-height:100px;
+background: #EBEBEB; /* Old browsers */
+background: -moz-linear-gradient(top, #F8F8F8 0%, #EBEBEB 67%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F8F8F8), color-stop(67%,#EBEBEB)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #F8F8F8 0%,#EBEBEB 67%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #F8F8F8 0%,#EBEBEB 67%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #F8F8F8 0%,#EBEBEB 67%); /* IE10+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F8F8F8', endColorstr='#EBEBEB',GradientType=0 );*/ /* IE6-9 */
+background: linear-gradient(top, #F8F8F8 0%,#EBEBEB 67%); /* W3C */
+}
+
+body.HomePage .news .articleFixedHeight{
+	height: 300px;
+	overflow: hidden;
+}
+
+body.HomePage .news .primaryFixedHeight{
+	height: 220px;
+	overflow: hidden;
+}
+
+body.HomePage .primaryImage {
+margin-bottom:15px;
+}
+
+body.HomePage .news .primary {
+width:590px;
+padding-bottom:15px;
+}
+
+body.HomePage .news .primary img {
+float:left;
+margin-right:20px;
+}
+
+body.HomePage .news .article a, 
+body.HomePage .promos .promo a {
+color:#000;
+text-decoration:none;
+}
+
+body.HomePage .news .article a:hover, 
+body.HomePage .promos .promo a:hover {
+text-decoration:underline;
+}
+
+body.HomePage .news h2  {
+margin:0 0 10px 0;
+}
+
+body.HomePage #content .news p, .HomePage #content .news li  {
+	font-size:90%;
+	line-height:1.3;
+	color:#333;
+}
+
+body.HomePage .promo h2 {
+	margin-top: 0;
+}
+
+body.HomePage .promo h2,
+body.HomePage .promo p, 
+body.HomePage .promo ul, 
+body.HomePage .promo ol {
+	color:#333;
+}
+body.HomePage .promo p, 
+body.HomePage .promo ul, 
+body.HomePage .promo ol {
+	font-size: 0.85714em;
+}
+body.HomePage .promo ul {
+	padding-left: 1.15em;
+}
+body.HomePage .promo a {
+	font-weight: bold;
+}
+
+body.HomePage .news .article + .article, 
+body.HomePage .promos .promo + .promo {
+margin-left:15px;
+}
+
+body.HomePage a.more  {
+color:#000;
+display:block;
+text-indent:-9999px;
+direction:ltr;
+text-decoration:none;
+background:url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/img/bgArrowLarge.png) bottom right no-repeat;
+width:35px;
+height:15px;
+position:absolute;
+bottom:10px;
+right:10px;
+}
+
+body.HomePage .primary a.more  {
+position:static;
+float:right;
+margin-top:-15px;
+}
+
+
+body.HomePage .aside {
+background:#FFF;
+border:1px solid #C9C9C9;
+-moz-border-radius:12px;
+-webkit-border-radius:12px;
+border-radius:12px;
+padding:10px 15px;
+margin-left:635px;
+}
+
+body.HomePage .aside tr.alert a {
+background-image:url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/img/spriteGlobal.png);
+background-position:-135px -283px;
+padding: 2px 0 2px 24px;
+}
+
+body.HomePage .aside h2 {
+font-weight:normal;
+margin:0 0 3px 0;
+color:#333;
+font-size:1.35em;
+}
+
+body.HomePage .aside > a {
+text-align:right;
+display:block;
+padding:7px 0 0 0;
+}
+
+.HomePage .tabs-list ul {
+list-style-type:none;
+padding-left:0;
+margin:0;
+}
+
+/* to add more tabs change the margin-left below */
+.HomePage .tabs-list li img {
+display:block;
+margin-left:25px;
+padding-top:3px;
+}
+
+body.HomePage .tabs-list li a, 
+body.HomePage .tabs-list li a:hover, 
+body.HomePage .tabs-list li a:visited {
+color: #000;
+font-size:0.9em;
+text-decoration:none;
+}
+
+body.HomePage .tabs-list li.current {
+background: #B6B1A9;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-topright: 4px;
+-moz-border-radius-bottomright: 0;
+-moz-border-radius-bottomleft: 0;
+-webkit-border-radius: 4px 4px 0 0;
+border-radius: 4px 4px 0 0;
+}
+
+body.HomePage .tabbody {
+background: #EDEDED;
+-moz-border-radius-topleft: 4px;
+-moz-border-radius-topright: 4px;
+-moz-border-radius-bottomright: 0;
+-moz-border-radius-bottomleft: 0;
+-webkit-border-radius: 4px 4px 0 0;
+border-radius: 4px 4px 0 0;
+padding:10px 0;
+}
+
+body.HomePage .tabbody table {
+width:100%;
+}
+
+body.HomePage .tabs th, 
+body.HomePage .tabs td {
+text-align: left;
+padding:5px 10px;
+}
+
+body.HomePage .tabs tr.alert td {
+background: #FAFBC5;
+font-weight:bold;
+color:#000; 
+cursor:default;
+}
+
+body.HomePage .tabs th + th, 
+body.HomePage .tabs td + td  {
+text-align: right;
+}
+
+body.HomePage .tabs tfoot td {
+border-top: 1px solid #C9C9C9;
+padding-top:10px;
+font-size:90%;
+text-align: right;
+}
+
+body.HomePage .current-info, 
+body.HomePage .tabhead {
+display:none;
+}
+
+body.HomePage .popupContent{
+	padding: 6px 16px;
+}
+
+/*------------------------------------*\
+   $INTERNET EXPLORER SCREEN MODIFICATIONS
+\*------------------------------------*/
+.ie7 .HomePage #content {
+overflow: hidden;
+}
+
+.ie7 .HomePage .tabs li {
+display:inline;
+padding: 10px 5px;
+}
+
+.ie7 .HomePage .tabs li img {
+margin-left:10px;
+}
+
+.ie7 .HomePage .selectBox-dropdown, 
+.ie8 .HomePage .selectBox-dropdown, 
+.ie9 .HomePage .selectBox-dropdown {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.1;
+}
+
+.ie7 .HomePage .selectBox-dropdown { 
+  width:70px;
+}
+
+.ie7 .HomePage .goingTo .selectBox-dropdown { 
+  width:30px;
+}
+
+/*------------------------------------*\
+   $PRINT LAYOUTS
+\*------------------------------------*/
+@media print {
+
+body.HomePage #locationSelector {
+display:none;
+}
+
+body.HomePage .aside {
+padding:10px;
+margin:0;
+}
+
+}
+
+/* Added by SS - overrides things that have built up over the last 3 years... */
+
+body.HomePage #locationSelector .goingTo span.pad { margin-right: 5px; }
+
+body.HomePage #locationSelector .selectBox-dropdown { margin-right: 0; padding-left: 5px; padding-right: 30px; margin: 0 10px 10px 0; }
+body.HomePage #locationSelector .map { display: none; }
+body.HomePage #locationSelector .goingTo #am + .selectBox-dropdown {margin-left: 5px;}
+body.HomePage #locationSelector .goingTo .selectBox-dropdown { margin-right: 5px; padding-left: 10px; padding-right: 42px; }
+
+html.ie7 #locationSelector .leavingFrom .selectBox{ padding-right: 2px; }
+html.ie7 #locationSelector .goingTo .selectBox{ padding-right: 20px; }
+html.ie8 #locationSelector .leavingFrom .selectBox{ padding-right: 30px; }
+
+
+html.oldie body.HomePage #locationSelector .searchOptions {
+	top: auto;
+}
+
+/***** override layout *****/
+
+.ie8 #layout-2-1 #content {
+	overflow: inherit;
+	display: inline-block;
+}
+
+#layout-2-1 #content {
+	width: 100%;
+}
+
+ul.no-bullets li {
+	background: none !important;
+	padding-left: 0 !important;
+}
+
+
+/***** override promo boxes *****/
+
+.promos {
+	width: 100% !important;
+}
+.promo {
+	width: 280px !important;
+}
+.ie8 .promos .promo,
+.ie7 .promos .promo {
+	-pie-background: linear-gradient(#F8F8F8, #EBEBEB);
+	behavior: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/themes/transport-site/css/PIE.htc);
+	margin-left: 15px;
+}
+
+.ie8 div.promos #promo1,
+.ie7 div.promos #promo1 {
+	margin-left: 0;
+}
+
+.promos h4 {
+	margin: 0px 0px 5px 0px;
+	color: #333;
+}
+
+/***** location selector *****/
+body.HomePage .functional-panel {
+	float: left;
+	margin-left: 15px;
+	width: 310px;
+	position: relative;
+	overflow: visible;
+	display: inline-block;
+}
+body.HomePage .functional-panel.first {
+	margin-left: 0;
+}
+body.HomePage .panel .panel-content {
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+body.HomePage .panel ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body.HomePage .panel h2 {
+	margin: 0;
+	padding: 0;
+}
+body.HomePage .functional-panel .selectBox-dropdown {
+	border-radius: 0 0 0 0;
+	border: 0 none;
+}
+
+/***** slideshow ****/
+
+#home-slideshow {
+	width: 635px;
+	height: 280px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+#home-slideshow p.caption {
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+	padding: 0;
+	margin: 0;
+	font-size: 1.14285em;
+	line-height: inherit;
+	z-index: 2;
+}
+#home-slideshow p.caption a {
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+#home-slideshow .slideshow-controls-holder {
+	height: 121px;
+	background:url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/slideshow-bottom-gradient.png) 0 0 repeat-x;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+#home-slideshow .controls {
+	list-style: none;
+	margin: 0;
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	padding: 0;
+	z-index: 500;
+}
+#home-slideshow .controls li {
+	float: left;
+	overflow: hidden;
+	background: #5e5f63;
+	/*background: rgba(255,255,255,0.2);*/
+	color: #FFF;
+	font-weight: bold;
+	margin-left: 5px;
+	font-size: 0.85714em;
+	position: relative;
+	behavior: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/themes/transport-site/css/PIE.htc);
+}
+
+#home-slideshow .controls li a {
+	padding: 7px 10px;
+	text-align: center;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+#home-slideshow .controls li a:hover, #home-slideshow .controls li a:focus { 
+	color: #fff; 
+	text-decoration: underline;
+}
+
+#home-slideshow .controls li a.active:hover, #home-slideshow .controls li a.active:focus { 
+	color: #000; 
+}
+
+#home-slideshow .controls .active {
+	background: #FFFFFF; /* Old browsers */
+	color: #333;
+}
+
+/***** next5 *****/
+
+body.HomePage #next5 {
+	background: #717577;
+}
+
+body.HomePage #next5 ul {
+	height: 80px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body.HomePage #next5 label {
+	color: #FFF;
+	padding-left: 5px;
+}
+
+body.HomePage #next5 .tabbody label {
+	display: none;
+}
+
+body.HomePage #next5 .tabs-list a {
+	color: #FFF;
+}
+body.HomePage #next5 .tabs-list .current a {
+	color: #000;
+}
+body.HomePage #next5 .tabs-list .current,
+body.HomePage #next5 .tabbody {
+	background: #B6B1A9;
+}
+
+body.HomePage #next5 .tabbody {
+	height: 105px;
+}
+
+body.HomePage #next5 .tabs-list .current {
+	behavior: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/themes/transport-site/css/PIE.htc);
+}
+
+body.HomePage #next5 .selectBox-dropdown {
+	width: 200px;
+}
+body.HomePage #next5 .tabs-list li {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+body.HomePage .functional-panel .submitButton {
+	border-radius: 6px;
+	box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+	color: #fff;
+	text-decoration: none;
+	float: none !important;
+	margin: 0 auto;
+	width: 270px;
+}
+
+/***** myki *****/
+
+body.HomePage #myki {
+	background: #4D4F53;
+/*	background: #6c6f70;
+	background: #4a4c58;*/
+}
+
+body.HomePage #myki ul {
+	margin: 0 0 0 2px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+body.HomePage #myki li {
+	float: left;
+	margin: 0;
+}
+
+body.HomePage #myki li a.myki-image {
+	display: block;
+	width: 74px;
+	height: 74px;
+	margin: 0px 8px;
+	overflow: hidden;
+	text-indent: -999em;
+	/*background-image: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/myki-icon-sprites.jpg);*/
+	/*background-repeat: no-repeat;*/
+	border: 2px solid #fff;
+	border-radius: 40px;
+	color: #FFF;
+	position: relative;
+	z-index: 0;
+	behavior: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/themes/transport-site/css/PIE.htc);
+}
+
+
+body.HomePage #myki li a.myki-image:hover, body.HomePage #myki li a.myki-image:focus {
+	background-color: #64666B;
+}
+
+body.HomePage #myki-buy {
+	background: transparent url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/myki-hand.png) center center no-repeat;
+}
+
+body.HomePage #myki-topup {
+	background: transparent url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/myki-money.png) center center no-repeat;
+}
+body.HomePage #myki-register {
+	background: transparent url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/myki-lock.png) center center no-repeat;
+}
+
+body.HomePage #myki-logo {
+	display: block;
+	margin: 0px auto 20px 60px;
+}
+
+a.myki-tile-button {
+	text-decoration: none;
+	display:block;
+	border: 0;
+	-moz-box-shadow: 2px 2px 5px #222;
+	-webkit-box-shadow: 2px 2px 5px #222;
+	box-shadow: 2px 2px 5px #222;
+	font-size: 100%;
+	font-weight: bold;
+	color: #4D4F53;
+	width: 82px;
+	margin: 10px auto 0px auto;
+	padding: 5px 0px;
+	text-indent: -100000px;
+	background: transparent url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/myki-button-sprite.png) no-repeat;
+	overflow: hidden;
+}
+
+#myki-buy-button {
+	 background-position: 0 -56px;
+}
+
+#myki-topup-button {
+	 background-position: 0 -280px;
+}
+
+#myki-register-button {
+	 background-position: 0 -168px;
+}
+
+#myki-buy-button:hover, #myki-buy-button:focus {
+	background-position: 0 0;
+	-moz-box-shadow: 2px 2px 10px #111;
+	-webkit-box-shadow: 2px 2px 10px #111;
+	box-shadow: 2px 2px 10px #111;
+}
+
+#myki-topup-button:hover, #myki-topup-button:focus {
+	background-position: 0 -224px;
+	-moz-box-shadow: 2px 2px 10px #111;
+	-webkit-box-shadow: 2px 2px 10px #111;
+	box-shadow: 2px 2px 10px #111;
+}
+
+#myki-register-button:hover, #myki-register-button:focus {
+	background-position: 0 -112px;
+	-moz-box-shadow: 2px 2px 10px #111;
+	-webkit-box-shadow: 2px 2px 10px #111;
+	box-shadow: 2px 2px 10px #111;
+}
+
+
+.myki-tile-button:focus, .myki-tile-button:hover {
+	color: #222;
+}
+
+.myki-tile-button:active {
+	margin-top: 11px; 
+	-moz-box-shadow: 0px 0px 5px #222;
+	-webkit-box-shadow: 0px 0px 5px #222;
+	box-shadow: 0px 0px 5px #222;
+}
+
+body.HomePage #locationSelector .submitButton:hover, 
+body.HomePage #locationSelector .submitButton:focus
+{
+background: #262626; /* Old browsers */
+}
+
+body.HomePage #next5 .submitButton {
+	border-top: 1px solid #666;
+	border-left: 1px solid #888;
+	border-bottom: 1px solid #111;
+	box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+	background: #4D4F53; /* Old browsers */
+	background: -moz-linear-gradient(top, #5b5c62 0%, #5b5c62 50%, #4D4F53 51%, #4D4F53 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b5c62), color-stop(50%,#5b5c62), color-stop(51%,#4D4F53), color-stop(100%,#4D4F53)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #5b5c62 0%,#5b5c62 50%,#4D4F53 51%,#4D4F53 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #5b5c62 0%,#5b5c62 50%,#4D4F53 51%,#4D4F53 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #5b5c62 0%,#5b5c62 50%,#4D4F53 51%,#4D4F53 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #5b5c62 0%,#5b5c62 50%,#4D4F53 51%,#4D4F53 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5c62', endColorstr='#4D4F53',GradientType=0 ); /* IE6-9 */
+	-pie-background: linear-gradient(#5b5c62, #4D4F53); /*PIE*/
+	behavior: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/themes/transport-site/css/PIE.htc);
+}
+
+body.HomePage #next5 .submitButton:hover, 
+body.HomePage #next5 .submitButton:focus 
+{
+background: #4D4F53; /* Old browsers */
+}
+
+/* Is actually an a.submitButton */
+body.HomePage #myki .submitButton {
+	line-height: 24px;
+	height: 24px;
+	width: 259px;
+	border-left: 1px solid transparent;
+	border: 1px solid transparent;
+	background: #37383a; /* Old browsers */
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 50%, #edf3f6 51%, #edf3f6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(50%,#FFFFFF), color-stop(51%,#edf3f6), color-stop(100%,#edf3f6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #FFFFFF 0%,#FFFFFF 50%,#edf3f6 51%,#edf3f6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #FFFFFF 0%,#FFFFFF 50%,#edf3f6 51%,#edf3f6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #FFFFFF 0%,#FFFFFF 50%,#edf3f6 51%,#edf3f6 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #FFFFFF 0%,#FFFFFF 50%,#edf3f6 51%,#edf3f6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#edf3f6',GradientType=0 ); /* IE6-9 */
+	-pie-background: linear-gradient(#FFFFFF, #edf3f6); /*PIE*/
+	behavior: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/themes/transport-site/css/PIE.htc);
+	color: #58595b;
+}
+
+body.HomePage #myki .submitButton:hover, 
+body.HomePage #myki .submitButton:focus 
+{
+background: #FFFFFF; /* Old browsers */
+
+}
+
+
+/***** top area boxes *****/
+
+.greybox {
+	background: #FFFFFF; /* Old browsers */
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #F3F3F3 67%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(67%,#F3F3F3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #FFFFFF 0%,#F3F3F3 67%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #FFFFFF 0%,#F3F3F3 67%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #FFFFFF 0%,#F3F3F3 67%); /* IE10+ */
+	background: linear-gradient(top, #FFFFFF 0%,#F3F3F3 67%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	-pie-background: linear-gradient(#FFFFFF, #F3F3F3); /*PIE*/
+	behavior: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/themes/transport-site/css/PIE.htc);
+}
+.greyborder {
+	border-radius: 12px;
+	border: 1px solid #EFEFEF;
+}
+
+#quickpicks, #performance, #disruptions-panel {
+	float: right;
+	width: 310px;
+	clear: right;
+}
+#quickpicks ul {
+}
+#quickpicks li {
+	background: url("/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/img/bgArrowLarge.png") 0px 4px no-repeat;
+	border-bottom: 1px solid #E3E3E3;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+}
+#quickpicks ul li:last-child {
+	padding-bottom: 0;
+	border-bottom: 0 none;
+}
+#quickpicks a {
+	text-decoration: none;
+	color: #000;
+}
+
+#quickpicks .panel-content {
+	padding-top: 0px;
+}
+
+
+#disruptions-panel {
+	margin-top: 5px;
+	position: relative;
+}
+
+#disruptions-panel span {
+    left: -10000px;
+    position: absolute;
+}
+
+#performance {
+	margin-top: 5px;
+	border: 1px solid #CCC;
+	position: relative;
+	background-image: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/performance-icons-sprites.png);
+	background-position: right -900px;
+	background-repeat: no-repeat;
+}
+
+#performance .performanceDate {
+	margin: 0px auto;
+	font-size: 0.78571em;
+}
+
+#performance.train {
+	background-position: right -504px;
+}
+#performance.tram {
+	background-position: right -252px;
+}
+#performance.rtrain {
+	background-position: right -756px;
+}
+#performance .moreperformance {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	margin: 0;
+}
+#performance .moreperformance a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 0.85714em;
+}
+#performance .mode {
+	float: left;
+	margin-top: 3px;
+}
+#performance .results {
+	margin-top: 0px;
+}
+#performance .mode li {
+	float: left;
+	background: #bcbdc0;
+	margin-left: 4px;
+}
+#performance .mode li.current {
+	background: #1a99ce;
+}
+#performance ul.mode li:first-child {
+	margin-left: 0;
+}
+#performance .mode a {
+	color: #FFF;
+	display: block;
+	float: left;
+	background-image: url(/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/performance-result-buttons.png);
+	background-repeat: no-repeat;
+	text-indent: -999em;
+	overflow: hidden;
+	height: 20px;
+}
+#performance .mode a.train {
+	background-position: 0 0;
+	width: 40px;
+}
+#performance .mode .current a.train {
+	background-position: 0 -20px;
+}
+#performance .mode a.tram {
+	background-position: -40px 0;
+	width: 40px;
+}
+#performance .mode .current a.tram {
+	background-position: -40px -20px;
+}
+#performance .mode a.rtrain {
+	background-position: -80px 0;
+	width: 101px;
+}
+#performance .mode .current a.rtrain {
+	background-position: -80px -20px;
+}
+
+#performance.train .results li {
+	color: #008CCF;
+}
+
+#performance.tram .results li {
+	color: #72BE42;
+}
+
+#performance.rtrain .results li {
+	color: #804297;
+}
+
+#performance .results li {
+	font-size: 1.28571em;
+	line-height: 1.4;
+}
+
+#performance .results span {
+	font-weight: bold;
+}
+
+#summer-disruptions {
+	padding: 10px;
+	float: right;
+	width: 290px;
+	clear: right;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/summer-disruptions.png');
+	max-height: 260px;
+}
+
+#summer-disruptions .summerDisruptionsInfo {
+	margin: 10px 10px 20px;
+	padding-top: 130px;
+}
+
+#summer-disruptions .sdActions {
+	font-size: 0.71428em;
+	display: inline-block;
+}
+
+#summer-disruptions .sdActions input {
+	margin: 0 0 0 7px;
+	padding: 5px 11px;
+	background: #504f54;
+	background:-moz-linear-gradient(top, #504f54, #4b483f);
+	background:-webkit-linear-gradient(top, #504f54, #4b483f);
+	background:-o-linear-gradient(top, #504f54, #4b483f);
+	background:-ms-linear-gradient(top, #504f54, #4b483f);
+	background:linear-gradient(top, #504f54, #4b483f);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#504f54', endColorstr='#4b483f',GradientType=0);
+}
+
+#summer-disruptions .sd-form-controls {
+	margin-left: 10px;
+}
+
+#summer-disruptions .sd-form-controls select {
+	width: 80%;
+	float: left;
+}
+
+#summer-disruptions .sd-checkbox {
+	padding: 0 25px 12px 0;
+	float: left;
+}
+
+#summer-disruptions .sd-checkbox input {
+	vertical-align: middle;
+	margin: 0 7px 2px 0;
+}
+
+#summer-disruptions .sd-checkbox label {
+	font-weight: bold;
+}
+
+#summer-disruptions #Form_DisruptionsForm_Line_chosen {
+	float: left;
+	width: 79% !important;
+	margin-bottom: 12px;
+}
+
+body.HomePage .functional-panel .tabs .tabbody {
+	padding: 0;
+	border-radius: 0 0 0 0;
+	padding: 10px;
+	margin-right: 10px;
+	padding-bottom: 35px;
+}
+.ie8 body.HomePage .functional-panel .tabs .tabbody {
+	margin-right: 9px;
+}
+
+body.HomePage .promos {
+	padding-bottom: 0;
+}
+
+
+#footer ul.servicesNavSubMenu li a, ul.servicesNavSubMenu {
+	background: none;
+}
+
+.slideshow-item {
+	display: none;
+}
+
+.homeOnly {
+	display: block;
+}
+
+#locationSelector .chosen-container a {
+	color: #000;
+}
+
+body.HomePage #next5 select {
+	width: 240px;
+}
+
+
+body.HomePage #locationSelector .leavingFrom label.error, .HomePage #locationSelector .goingTo label.error {
+    font-size: 0.71428em;
+	color: #ffe;
+	position: absolute;
+	top: -2px; 
+	right: 0px;
+}
+
+.HomePage #locationSelector .goingTo label.error {
+	top: 83px;
+}
+
+@media all and (max-width: 600px) {
+
+	body.HomePage .news .article + .article, body.HomePage .promos .promo + .promo {
+		margin: 0px auto;
+	}
+
+	body.HomePage .promos .promo {
+		margin: 0px auto;
+		float: none;
+	}
+
+	#home-slideshow {
+		display: none;
+	}
+
+	#quickpicks, #performance, #disruptions-panel {
+		margin: 0px auto;
+		margin-bottom: 10px;
+		float: none;
+		width: 310px;
+		clear: both;
+	}
+	
+	#summer-disruptions {
+		display: none;
+	}
+
+	#performance {
+		display: none;
+	}
+
+	body.HomePage .functional-panel {
+		margin: 5px auto;
+		float: none;
+		display: block;
+		height: auto;
+	}
+
+	body.HomePage div.functional-panel.first {
+		margin: 0px auto;
+	}
+
+	body.HomePage .functional-panel.home-journey-planner {
+		width: 100%;
+	}
+	
+	div.caretaker {
+		width: 300px;
+		
+		margin: 0px auto 10px auto;
+	}
+
+	#home-slideshow-mobile {
+		width:100% !important;
+		height:auto !important;
+		margin:5px 0 10px 0;
+		overflow:hidden !important;
+		display:none;
+	}
+
+	#home-slideshow-mobile img {
+		width:100% !important;
+		height:auto !important;
+	}
+
+	#home-slideshow-mobile > .slideshow-controls-holder {
+		display:inline;
+	}
+
+	#home-slideshow-mobile > .slideshow-controls-holder > .controls {
+		list-style: none;
+		margin: 0;
+		position: absolute;
+		bottom: 60px;
+		left: 5px;
+		padding: 0;
+		z-index: 500;
+	}
+
+	#home-slideshow-mobile > .slideshow-controls-holder > .controls > li {
+		float: left;
+		overflow: hidden;
+		background: #5e5f63;
+		color: #FFF;
+		font-weight: bold;
+		margin-left: 5px;
+		font-size: 0.8em;
+		position: relative;
+		display:inline-block;
+		height:18px;
+		width:17px;
+		padding:0;
+	}
+
+	#home-slideshow-mobile > .slideshow-controls-holder > .controls > li > a {
+		padding:0;
+		margin:0;
+		display:block;
+		height:18px;
+		width:17px;
+		line-height:18px;
+		color:#FFF;
+		text-align: center;
+	}
+
+	#home-slideshow-mobile > .slideshow-controls-holder > .controls > li > a:active,
+	#home-slideshow-mobile > .slideshow-controls-holder > .controls > li > a:visited {
+		background:#5e5f63;
+		color:#FFF;
+	}
+
+	#home-slideshow-mobile > .slideshow-controls-holder > .controls > li > a:hover {
+		text-decoration: underline;
+	}
+
+	#home-slideshow-mobile > .slideshow-controls-holder > .controls > li > a:focus {
+		background:#5e5f63;
+		text-decoration: underline;
+	}
+
+	#home-slideshow-mobile > .slideshow-controls-holder > .controls > li > a.active {
+		background:#FFF;
+		color:#333;
+	}
+
+	#home-slideshow-mobile > .slideshow-item > p.caption {
+		position: absolute;
+		margin: 0;
+		right: 10px;
+		bottom: 60px;
+		padding: 0;
+		font-size: 0.8em;
+		line-height: inherit;
+		z-index: 2;
+	}
+
+	#home-slideshow-mobile > .slideshow-item > p.caption > a {
+		color: #FFF;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	#disruptions-panel {
+		margin:0;
+		width:100%;
+	}
+
+	#disruptions-panel img {
+		width:100%;
+		height:auto;
+	}
+
+	p#tagline {
+		display:none;
+	}
+}
+.hb {
+  background-color:#fff;
+  height:478px;
+  margin-right:2px;
+  width:calc(33.3333333333% - 1.3333333333px)
+}
+.hb.active .hb__heading {
+  background-image:inherit;
+  opacity:1;
+  text-indent:0px
+}
+.hb__heading-wrapper {
+  background-color:#434343;
+  height:60px
+}
+.hb__heading {
+  align-items:center;
+  background-image:none;
+  background-position:21.3px center;
+  background-repeat:no-repeat;
+  background-size:26px;
+  color:#fff;
+  display:flex;
+  font-family:"titillium-regular";
+  font-size:19px;
+  height:60px;
+  opacity:0;
+  padding-left:60px;
+  text-indent:-9999px;
+  transition:opacity .3s ease
+}
+.hb__heading span:not(.hb__legend) {
+  position:relative;
+  top:2px
+}
+.hb__heading.i-lines-white {
+  background-size:20px 26px;
+  padding-left:55px
+}
+.hb.active .hb__heading.i-lines-white {
+  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-lines.svg)
+}
+.hb.active .hb__heading.i-clock-white {
+  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-time-white.svg)
+}
+.hb.active .hb__heading.i-info-white {
+  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-info-white.svg)
+}
+.hb .hb__heading.i-arrow-white {
+  padding-left:19px
+}
+.hb .hb__heading.i-arrow-white span {
+  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-arrow-back.svg);
+  background-position:left center;
+  background-repeat:no-repeat;
+  background-size:14px;
+  cursor:pointer;
+  display:block;
+  padding-left:27px;
+  padding-top:2px;
+  transition:opacity .3s ease
+}
+.hb .hb__heading.i-arrow-white span:hover {
+  opacity:.7
+}
+.hb__legend {
+  cursor:pointer;
+  font-family:Calibri;
+  font-size:16px;
+  margin-left:auto;
+  margin-right:21px;
+  transition:color .3s ease
+}
+#lines__stations-departures .hb__legend {
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none
+}
+.hb__legend svg {
+  max-width:6.3px;
+  position:relative;
+  top:1px;
+  right:-1px;
+  margin-left:2px
+}
+.hb__legend svg path {
+  fill:#fff;
+  transition:fill .3s ease
+}
+.hb__legend:hover {
+  color:#c4c4c4
+}
+.hb__legend:hover svg path {
+  fill:#c4c4c4
+}
+.hb__icon {
+  display:inline-block;
+  height:95px;
+  margin-bottom:7px;
+  width:95px
+}
+.hb__placeholder {
+  margin:0 auto;
+  max-width:210px;
+  padding-top:95px;
+  text-align:center
+}
+.hb.active .hb__placeholder {
+  display:none
+}
+.i-clock {
+  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-time.svg)
+}
+.i-info {
+  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-info.svg)
+}
+.hb__content {
+  height:416px;
+  overflow:auto
+}
+.hb__stations {
+  display:none
+}
+.hb__place {
+  font-family:Calibri;
+  line-height:22px !important;
+  padding:20px !important
+}
+.hb__place:before {
+  display:none
+}
+/*
+     FILE ARCHIVED ON 12:49:21 Oct 01, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:47:15 May 07, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.526
+  exclusion.robots: 0.075
+  exclusion.robots.policy: 0.069
+  cdx.remote: 0.047
+  esindex: 0.008
+  LoadShardBlock: 123.382 (3)
+  PetaboxLoader3.datanode: 135.481 (4)
+  load_resource: 153.704
+  PetaboxLoader3.resolve: 94.104
+*/

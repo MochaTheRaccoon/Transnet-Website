@@ -1,0 +1,2640 @@
+/* NOTE(Jake): THese look blurry on Chrome Windows */
+@font-face {
+	font-family: 'PTV';
+	src: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/fonts/PTVNetworkSans-Bold.otf');
+	/*src: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/fonts/PTVNetworkSans-Bold.eot#iefix') format('embedded-opentype'),
+		url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/fonts/PTVNetworkSans-Bold.woff2') format('woff2'),
+		url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/fonts/PTVNetworkSans-Bold.woff') format('woff'),
+		url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/fonts/PTVNetworkSans-Bold.ttf') format('truetype'),
+		url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/fonts/PTVNetworkSans-Bold.svg#floodromanitalic') format('svg');*/
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTV';
+	src: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/fonts/PTVNetworkSans-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTV';
+	src: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/css/fonts/PTVNetworkSans-Light.otf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+.jp-iframe-body,
+.jpform,
+.jpmyki {
+	font-family: Overpass, Helvetica, sans-serif;
+	font-weight: 800;
+}
+
+.jpform,
+.jpmyki,
+.jpnext5,
+.jp-headingbanner {
+	font-size: 14px;
+}
+
+.jp-iframe-body {
+	font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.jp-iframe-body button {
+	cursor: pointer;
+}
+
+/* -- Start JP Accordion -- */
+.jp-accordion,
+.jp-transport-lineconnector--coverup {
+	background: #F3F1EF;
+}
+
+.jp-accordion {
+	/* logic */
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	-webkit-transition: visibility 0s linear 0.43s, overflow 0s linear 0.43s, height 0.43s;
+	transition: visibility 0s linear 0.43s, overflow 0s linear 0.43s, height 0.43s;
+}
+
+.jp-accordion.is-open {
+	transition-delay: 0s;
+	overflow: visible;
+	visibility: visible;
+}
+
+.jp-accordion--inner {
+	/* NOTE(Jake): This element is used to calculate the height of the accordion.
+				   This is so .jp-accordion can have its height to set to this.
+	 */
+}
+
+.jp-print {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	width: 24px;
+	height: 22px;
+	margin-top: 12px;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/print.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/print.svg');
+	background-size: 24px 22px;
+	background-position: center;
+}
+
+/* -- End JP Accordion -- */
+.jp-page-background,
+.jp-page-background #main {
+	background: #E7E4E0;
+}
+
+/* -- Start JP General -- */
+.jp-inner {
+	padding-left: 16px;
+	padding-right: 16px;
+	box-sizing: border-box;
+}
+
+.jp-inner-tight {
+	padding-left: 24px;
+	padding-right: 24px;
+	box-sizing: border-box;
+}
+
+.jp-block,
+.jp-block.jp-u-reset-fieldset {
+	width: 100%;
+	margin-top: 16px;
+}
+
+.jp-block--arrdep {
+	position: relative;
+	z-index: 0;
+	padding-right: 80px;
+	box-sizing: border-box;
+}
+
+.jp-block--small {
+	margin-top: 8px;
+}
+
+.jp-block:first-child {
+	margin-top: 0;
+}
+
+.jp-block-heading {
+	display: inline-block;
+	font-size: 1.125em;
+	font-weight: normal;
+	font-weight: bold;
+}
+
+.jp-inlinerow {
+	font-size: 0 !important;
+	text-align: left;
+}
+
+.jp-inlinerow-column {
+	display: inline-block;
+	font-size: 16px; /* must be same as 'jpform' selector */
+	text-align: left;
+}
+
+.jp-select .value:after,
+.jp-panel-button-back:after {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+    margin-top: -12px; /* half of font-size */
+}
+
+.jp-u-align-right {
+	text-align: right;
+}
+
+.jp-u-visuallyhidden { 
+	border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; 
+}
+
+.jp-u-position-relative {
+	position: relative;
+	z-index: 0;
+}
+
+.jp-u-reset-heading,
+.jp-u-reset-p {
+	margin: 0;
+} 
+
+.jp-u-reset-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jp-u-reset-fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.jp-u-reset-list > * {
+	list-style: none;
+}
+
+.jp-u-reset-button,
+.jp-button {
+	/* reset button */
+	border: 0;
+	padding: 0;
+	background: none;
+
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.jp-u-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.jp-u-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+/* -- End JP General -- */
+
+
+/* -- Start JP Icons -- */
+.jp-icon,
+.jp-icon-transport {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	background-repeat: no-repeat;
+
+	image-rendering: -moz-crisp-edges;         	/* Firefox */
+	image-rendering: -o-crisp-edges;         	/* Opera */
+	image-rendering: -webkit-optimize-contrast;	/* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;  	/* IE (non-standard property) */
+}
+
+.jp-icon-clock {
+	width: 16px;
+	height: 16px;
+	background-image: url("/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/clock.png");
+	background-size: 16px 16px;
+}
+
+.jp-trip-alert {
+    padding: 1rem 0rem;
+}
+
+.jp-icon-warning,
+.jp-alert--leg:before {
+	width: 24px;
+	height: 24px;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/warning.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/warning.svg');
+	background-size: 24px 24px;
+}
+
+.jp-alert--leg p {
+    margin-bottom: 1rem;
+}
+
+.jp-icon-warning--transport {
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	z-index: 0;
+	width: 12px;
+	height: 12px;
+	background-size: 12px 12px;
+	border: 1px solid #fff;
+	border-radius: 30px;
+}
+
+.jp-icon-arrow-left {
+	width: 11px;
+	height: 14px;
+	background-size: 11px 14px;
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-left.png');
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-left.svg');
+}
+
+.jp-icon-arrow-left--small {
+	width: 6px;
+	height: 7px;
+	background-size: 6px 7px;
+}
+
+.jp-icon-arrow-right {
+	width: 11px;
+	height: 14px;
+	background-size: 11px 14px;
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-right.png');
+    background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-right.svg');
+}
+
+.jp-icon-arrow-right--small {
+	width: 6px;
+	height: 8px;
+	background-size: 6px 8px;
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-right--small.png');
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-right.svg');
+}
+
+.jp-icon-swap {
+	width: 16px;
+	height: 24px;
+	background-image: url("/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/switch.png");
+	background-image: url("/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/switch.svg");
+	background-size: 16px 24px;
+}
+
+.jp-icon-marker {
+	width: 15px;
+	height: 20px;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/journey-planner-icon-small.png');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/journey-planner-icon.svg');
+	background-size: 15px 20px;
+}
+
+.jp-custom-logo img {
+    margin-top: -21px;
+}
+
+.jp-icon-transport {
+	width: 33px;
+	height: 33px;
+	background-size: 33px 33px;
+	background-position: center;
+}
+
+.jp-icon-transport--train {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/train.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/train.svg');
+}
+
+.jp-icon-transport--train--inactive {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/train-inactive.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/train-inactive.svg');
+}
+
+.jp-icon-transport--tram {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/tram.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/tram.svg');
+}
+
+.jp-icon-transport--tram--inactive {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/tram-inactive.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/tram-inactive.svg');
+}
+
+.jp-icon-transport--bus {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/bus.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/bus.svg');
+}
+
+.jp-icon-transport--bus--inactive {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/bus-inactive.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/bus-inactive.svg');
+}
+
+.jp-icon-transport--regional-train {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/regional-train.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/regional-train.svg');
+}
+
+.jp-icon-transport--regional-coach {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/regional-coach.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/regional-coach.svg');
+}
+
+.jp-icon-transport--skybus {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/skybus.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/skybus.svg');
+}
+
+.jp-icon-transport--walk {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/walk.png');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/walk.svg');
+	width: 28px;
+	background-size: 28px 28px;
+}
+
+.jp-icon-transport--car {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/car.png');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/car.svg');
+}
+
+.jp-icon-transport--taxi {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/taxi.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/taxi.svg');
+}
+
+.jp-icon-transport--cycle, .jp-icon-transport--bicycle {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/cycle.png');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/cycle.svg');
+}
+/* -- End JP Icons -- */
+
+/* -- Start JP Legend -- */
+.jp-legend-item {
+	padding: 8px 0;
+	border-bottom: 1px solid #D7D2CB;
+}
+.jp-legend-label > * {
+	vertical-align: middle;
+}
+.jp-legend-label--text {
+	margin-left: 10px;
+}
+/* -- End JP Legend -- */
+
+/* -- Start Custom Select -- */
+.jp-select {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    width: 100%;
+    color: #333434;
+    line-height: 0;
+    text-align: left;
+    border-radius: 2px;
+    box-sizing: content-box;
+}
+
+.jp-select.is-disabled {
+    background-color: #eee;
+}
+
+.jp-select select,
+.jp-select .value {
+    font-size: 1em;
+}
+
+.jp-select.focus .value {
+    /*text-decoration: underline;*/
+}
+
+.jp-select .value,
+.jp-select-chosen > .chosen-single {
+	line-height: 20px;
+	padding: 9px 50px 9px 12px;
+
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.jp-select .value {
+	position: relative;
+	z-index: 1;
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+    color: #333434;
+
+    box-sizing: border-box;
+}
+
+.jp-select:before,
+.jp-select:after,
+.jp-select-chosen > .chosen-single:before,
+.jp-select-chosen > .chosen-single:after {
+	content: " "; /* >, › */
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	z-index: 0;
+	height: 100%;
+
+	border: 1px solid #D7D2CB;
+	border-radius: 3px;
+	background-color: #fff;
+	-wekbit-transition: all 0.22s;
+	transition: all 0.22s;
+}
+
+.jp-select:before,
+.jp-select-chosen > .chosen-single:before {
+	left: 0;
+	z-index: 0;
+
+	width: 100%;
+	width: calc(100% - 43px);
+
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.jp-select:after,
+.jp-select-chosen > .chosen-single:after {
+	right: 0;
+	z-index: 1;
+
+	width: 40px;
+	height: 100%;
+	margin-left: 2px;
+	text-align: center;
+
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-down.svg');
+	background-position: 11px center;
+	background-size: 19px 17px;
+	background-repeat: no-repeat;
+}
+
+.jp-select.focus:before,
+.jp-select.focus:after,
+.jp-select-chosen:hover > .chosen-single:before,
+.jp-select-chosen:hover > .chosen-single:after,
+.jp-select-chosen.chosen-container-active > .chosen-single:before,
+.jp-select-chosen.chosen-container-active > .chosen-single:after {
+	background-color: #d9d7d7;
+}
+
+.jp-select-chosen.chosen-disabled {
+	opacity: 1 !important;
+	cursor: default;
+	color: #AFA9A0;
+}
+
+.jp-select-chosen.chosen-disabled > .chosen-single:before,
+.jp-select-chosen.chosen-disabled > .chosen-single:after,
+.jp-select-chosen.chosen-disabled:hover > .chosen-single:before,
+.jp-select-chosen.chosen-disabled:hover > .chosen-single:after {
+	background-color: #e6e3df;
+	border-color: #d7d2cb;
+}
+
+.jp-select-chosen.chosen-disabled > .chosen-single:after {
+    background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-down-grey.svg') !important;
+}
+
+.jp-select select {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0;
+    cursor: pointer;
+
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    filter: alpha(opacity=0);
+
+    -moz-appearance: menulist-text;
+    -webkit-appearance: menulist-text;
+    appearance: menulist-text;
+}
+
+.jp-select-chosen {
+	width: 100% !important;
+}
+
+.jp-select-chosen > .chosen-single {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	width: 100%;
+	font-size: 16px;
+	color: inherit;
+}
+
+.jp-select-chosen > .chosen-single,
+.jp-select-chosen.chosen-container-active.chosen-with-drop .chosen-single  {
+	/* reset chosen css */
+	background-image: none;
+	border: 0;
+	box-shadow: none;
+}
+
+.jp-select-chosen > .chosen-single span {
+	position: relative;
+	z-index: 4;
+}
+
+/* -- End Custom Select -- */
+
+/* -- Start JP Depart -- */
+.jp-depart,
+#content .jp-depart {
+	font-size: 0 !important;
+	margin-bottom: 0;
+}
+
+.jp-depart-col {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: top;
+}
+
+.jp-depart-col-icon {
+	top: 3px;
+	margin-right: 6px;
+}
+
+/* -- End JP Depart -- */
+
+/* -- Start JP FormField -- */
+.jp-select select,
+.jp-input-text {
+	/* NOTE:; Must be bigger than 16px to not zoom on iOS devices */
+	font-size: 16px;
+	/* NOTE: Explicitly set line-height to avoid Firefox rounding up issues */
+	line-height: 18px;
+
+	/* Remove default iOS Safari styles */
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.jp-input-text {
+	width: 100%;
+	background: #fff;
+	border: 1px solid #D7D2CB;
+	border-radius: 4px;
+	padding: 10px 5px;
+	box-sizing: border-box;
+
+	background-size: 16px 16px;
+	background-position: 8px 49%;
+	background-repeat: no-repeat;
+    color: #333434;
+}
+
+.jp-input-text.has-error {
+	border-color: #BD1114;
+	padding-left: 32px;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/error.png');
+}
+
+.jp-input-text.has-error::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BD1114;
+}
+.jp-input-text.has-error::-moz-placeholder { /* Firefox 19+ */
+  color: #BD1114;
+}
+.jp-input-text.has-error:-ms-input-placeholder { /* IE 10+ */
+  color: #BD1114;
+}
+.jp-input-text.has-error:-moz-placeholder { /* Firefox 18- */
+  color: #BD1114;
+}
+
+.jp-input-text-location {
+	border-width: 2px;
+	border-radius: 0;
+	border-left-width: 0;
+	border-bottom-width: 0;
+	border-right-width: 0;
+}
+
+.jp-input-text-location.has-error {
+	border-width: 1px;
+}
+
+.jp-button,
+.jp-button:hover,
+.jp-button:focus {
+	color: inherit;
+}
+
+.jp-button {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	width: 100%;
+	padding: 10px 18px;
+	padding-right: 43px;
+
+	font-size: 16px;
+	/* NOTE: Explicitly set line-height to avoid Firefox rounding up issues */
+	line-height: 18px;
+
+	text-decoration: none;
+	text-align: left;
+	vertical-align: top;
+
+	border: 1px solid transparent;
+	box-sizing: border-box;
+
+	/* required for iOS click events to work */
+	cursor: pointer;
+}
+
+.jp-button--full-width {
+	width: 100%;
+}
+
+.jp-button--no-margin {
+	margin-bottom: 0;
+}
+
+.jp-button > span {
+	position: relative;
+	z-index: 1;
+}
+
+.jp-button:before,
+.jp-button:after {
+	content: " "; /* >, › */
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	z-index: 0;
+	height: 100%;
+
+	border: 1px solid transparent;
+	border-radius: 3px;
+	transition: all 0.22s;
+	-webkit-transition: all 0.22s;
+}
+
+.jp-button:before {
+	left: 0;
+	z-index: 0;
+
+	width: 100%;
+	width: calc(100% - 43px);
+
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.jp-button:after {
+	right: 0;
+	z-index: 1;
+
+	width: 40px;
+	height: 100%;
+	margin-left: 2px;
+	text-align: center;
+
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-color: inherit;
+
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-right.png');
+    background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-right.svg');
+	background-color: inherit;
+	background-position: center center;
+	background-size: 10px 14px;
+	background-repeat: no-repeat;
+}
+
+.jp-button-secondary,
+a.jp-button-secondary:hover,
+a.jp-button-secondary:focus,
+a.jp-button-secondary:visited {
+	color: #333;
+}
+
+.jp-button-secondary:before,
+.jp-button-secondary:after {
+	border-color: #D7D2CB;
+	background-color: #fff;
+}
+
+.jp-button-secondary:hover:before,
+.jp-button-secondary:focus:before,
+.jp-button-secondary:hover:after,
+.jp-button-secondary:focus:after {
+	background-color: #d9d7d7;
+}
+
+.jp-button-secondary--accordion:after {
+	background-size: 15px 15px;
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/plus-icon.svg');
+}
+
+.jp-button-secondary--accordion.is-open:after {
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/close-icon.svg');
+}
+
+.jp-button-primary:after {
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/arrow-right-light.svg');
+}
+
+.jp-button-primary,
+.jp-button-primary:hover,
+.jp-button-primary:focus,
+.jp-button-primary:visited {
+	padding-left: 0;
+	padding-top: 9px;
+	padding-bottom: 8px;
+
+	font-size: 1.125em;
+	/* NOTE: Explicitly set line-height to avoid Firefox rounding up issues */
+	line-height: 21px;
+
+	text-align: center;
+	color: #fff;
+}
+
+.jp-button-primary:before {
+	background-color: #333434;
+}
+
+.jp-button-primary:after {
+	background-color: #D92C27;
+}
+
+.jp-button-primary:hover:before,
+.jp-button-primary:focus:before {
+	background-color: #222323;
+}
+
+.jp-button-primary:hover:after,
+.jp-button-primary:focus:after {
+	background-color: #be3228;
+}
+
+.jp-button-close-panel {
+	width: 100%;
+}
+
+.jp-button-buymyki:before,
+.jp-button-buymyki:after {
+	background-color: #fff;
+	border-color: #8EA12F;
+}
+
+.jp-button-topupmyki:before,
+.jp-button-topupmyki:after {
+	background-color: #C0D740;
+	border-color: #8EA12F;
+}
+
+.jp-swap {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	z-index: 0;
+	margin-top: -10px;
+}
+
+.jp-swap-button {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-top: -16px; /* half the height */
+}
+
+.jp-swap-icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url("/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/arrow_refresh.png") no-repeat right center;
+}
+/* -- End JP FormField -- */
+
+/* -- Start JP Form / Panel -- */
+.jpform,
+.jp-panel {
+	width: 100%;
+	height: 100%;
+}
+
+.jp-background,
+.jp-panel,
+.jp-panel-footer {
+	background-color: #F3F1EF;
+}
+
+.jp-panel-content,
+.jp-panel-headingbanner-journeyoptions,
+.jp-body-journeyoptions,
+.jp-journeyoption,
+.jp-footer-journeyoptions {
+	background-color: #fff;
+}
+
+.jp-heading,
+.jp-panel-heading {
+	margin: 0;
+	vertical-align: top;
+}
+
+.jp-heading,
+#content .jp-heading,
+.jp-panel-heading,
+#content .jp-panel-heading {
+	display: inline-block;
+	font-size: 1.125em;
+	font-weight: bold;
+}
+/* -- End JP Form / Panel -- */
+
+/* -- Journey Plan Page -- */
+.jpform-col {
+	float: left;
+	max-width: 100%;
+}
+
+.jpform-col-fields {
+	width: 310px;
+	width: 32.291666%;
+}
+
+.jpform-col-results {
+	width: 634px;
+	width: 66.041666%;
+	margin-left: 16px;
+	margin-left: 1.6666%;
+}
+
+/* -- End Journey Plan Page -- */
+
+/* -- Start Myki Panel -- */
+.jpmyki,
+body.HomePage #myki.jpmyki {
+	position: relative;
+	z-index: 0;
+	background-color: #515151;
+}
+
+.jp-myki-copysection {
+	position: relative;
+	left: -10px;
+	z-index: 0;
+
+	margin-top: 73px;
+
+	text-align: center;
+}
+
+.jp-myki-largetext {
+	display: inline-block;
+	width: 164px;
+	height: 84px;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/mykipanel/myki.svg');
+	background-size: 100% 100%;
+}
+
+.jp-myki-text,
+#content .jp-myki-text {
+	line-height: 1.3;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.jp-myki-linksection {
+	position: absolute;
+	left: 0;
+	bottom: 27px;
+	z-index: 0;
+	width: 100%;
+}
+
+.jp-myki-button {
+	margin-bottom: 16px;
+}
+
+.jp-myki-button:before,
+.jp-myki-button:after {
+	background-color: #fff;
+	border: 0;
+	box-shadow: inset 0 0 0 1px #91a430;
+}
+
+.jp-myki-button:hover:before,
+.jp-myki-button:focus:before,
+.jp-myki-button:hover:after,
+.jp-myki-button:focus:after {
+	background-color: #e8f0ba;
+}
+
+/* -- End Myki Panel -- */
+
+/* -- Start Next5 Panel -- */
+.jpnext5,
+body.HomePage #next5.jpnext5 {
+	background-color: #F3F1EF;
+}
+
+.jpnext5 .ss-inlinehelp-icon {
+	top: 84px !important;
+	left: auto !important;
+	right: 16px;
+	z-index: 0;
+}
+
+.jpnext5 .ss-inlinehelp-icon .ui-icon-help.icon-light {
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/question-mark.svg') !important;
+	background-position: 0 0 !important;
+}
+
+.jp-next5-form-row {
+	margin: 12px 0;
+}
+
+.jp-next5-tabs {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.jp-next5-tabbody-inner {
+	height: 230px;
+	background-color: #fff;
+	padding: 0 16px;
+	padding-bottom: 16px;
+	box-sizing: border-box;
+}
+
+.jp-next5-tabbody-innerinner {
+	position: relative;
+	z-index: 0;
+	height: 100%;
+}
+
+.jp-input-text-next5,
+.jp-select-chosen .chosen-search input {
+	width: 100%;
+	border: 1px solid #d8d3cc;
+	border-radius: 4px;
+	padding: 10px 12px;
+	padding-right: 40px;
+	box-sizing: border-box;
+
+	background-size: 15px 15px;
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/search.png');
+	background-image:url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/search.svg');
+	background-position: 98% center;
+	background-position: calc(100% - 16px) center;
+	background-repeat: no-repeat;
+}
+
+.jp-select-chosen.chosen-container-single-nosearch .chosen-search {
+	position: absolute;
+	left: -9999px;
+}
+
+.jp-next5-tab-current {
+	background-color: #fff;
+}
+
+.jp-next5-tabs .jp-icon-transport-active,
+.jp-next5-tabs .jp-next5-tab-current .jp-icon-transport-inactive {
+	display: none;
+}
+
+.jp-next5-tabs .jp-next5-tab-current .jp-icon-transport-active {
+	display: inline-block;
+}
+
+.jp-next5-submit {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 0;
+	margin-top: 16px;
+}
+
+.jpnext5 .tabs-list > li {
+	display: inline-block;
+	width: 93px;
+	padding: 13px 5px;
+	font-weight: bold;
+	text-align: center;
+	border-left: 1px solid #d7d2cb;
+	box-sizing: border-box;
+}
+
+.jpnext5 .tabs-list > li + li {
+	width: 92px;
+}
+
+.jpnext5 .tabs-list > li:first-child {
+	border-left: 0;
+}
+
+.jpnext5 .tabs-list > li {
+	color: #333;
+}
+
+body.HomePage #next5 .tabs-list a {
+	display: inline-block;
+	color: inherit;
+}
+/* -- End Next5 Panel -- */
+
+/* -- Start JP Autocomplete -- */
+.jp-autocomplete {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	width: 226px;
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #fff;
+}
+
+.jp-autocomplete-list {
+	font-size: 0 !important;
+	padding: 0;
+}
+
+.jp-autocomplete-item.ui-state-hover,
+.jp-autocomplete-list .ui-state-hover,
+.jp-autocomplete-item.ui-state-focus, 
+.jp-autocomplete-list .ui-state-focus {
+	background: #dedede;
+}
+
+.jp-autocomplete-item,
+.ui-menu li.jp-autocomplete-item {
+	margin-bottom: 0;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+.jp-autocomplete-item {
+	width: 100%;
+	border-top: 1px solid #D7D2CB;
+}
+
+.jp-autocomplete-item--link,
+.jp-autocomplete-tab--link {
+	cursor: pointer;
+}
+
+.jp-autocomplete-item--link,
+.jp-autocomplete-item--text,
+.ui-menu .ui-menu-item a.jp-autocomplete-item--link {
+	display: inline-block;
+	width: 100%;
+	padding: 6px 6px;
+	color: #333;
+	box-sizing: border-box;
+	font-size: inherit;
+}
+
+.jp-autocomplete-item--link:hover,
+.jp-autocomplete-item--link:focus,
+.jp-autocomplete-item--link.ui-state-focus,
+.ui-menu .ui-menu-item a.jp-autocomplete-item--link.ui-state-focus {
+	background-color: #E7E4E0;
+	background-image: none;
+}
+
+.ui-menu .ui-menu-item a {
+	/* Fix hover/focus pop issues */
+	border: 1px solid transparent;
+}
+
+.jp-autocomplete-removehistory {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	z-index: 0;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.jp-autocomplete-removehistory:hover .ui-icon,
+.jp-autocomplete-removehistory:focus .ui-icon {
+	background-color: #C6C3C0;
+}
+
+.jp-autocomplete-removehistory .ui-icon,
+li.userEntry .jp-autocomplete-removehistory .ui-icon {
+	position: absolute;
+	top: 0;
+	right: 2px;
+	z-index: 0;
+}
+
+.jp-autocomplete-group {
+	border-top: 2px solid #D7D2CB;
+}
+
+.jp-autocomplete-group--hidden:first-child + .jp-autocomplete-group {
+	border-top: 0;
+}
+
+.jp-autocomplete-group--label {
+	font-weight: bold;
+	margin-left: 6px;
+}
+
+.jp-autocomplete-group--label,
+.jp-autocomplete-group--icon {
+	vertical-align: middle;
+}
+
+.jp-autocomplete-group--icon {
+	width: 16px;
+	height: 16px;
+	background-size: 16px 16px;
+	box-sizing: border-box;
+}
+
+.jp-autocomplete-group--hidden {
+	display: none;
+}
+/* -- End JP Autocomplete -- */
+
+/* -- Start JP Form -- */
+/* todo(jake): remove this properly, currently prepends before <h2> element */
+.jpform .ss-inlinehelp-icon {
+	display: none !important;
+}
+
+.jpform {
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.jpform--mask {
+	position: relative;
+	z-index: 0;
+}
+
+.jpform--mask:before {
+	content: " ";
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+}
+
+.jpform--mask:after {
+	content: " ";
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 11;
+	width: 32px;
+	height: 32px;
+	margin-left: -16px;
+	background-repeat: no-repeat;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/mask-loader.gif');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/mask-loader.svg');
+}
+
+.jpform-button {
+	margin-top: 11px;
+}
+
+.jpform.is-loading .jpform--mask:before,
+.jpform.is-loading .jpform--mask:after {
+	display: block;
+}
+
+.jp-headingbanner {
+	width: 100%;
+	max-height: 64px;
+	padding-top: 21px;
+	padding-bottom: 21px;
+	background: #333434;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.jp-body {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.jp-body.has-footer {
+	overflow-y: auto;
+	height: calc(100% - 71px - 53px - 54px); /*  (.jp-footer height) - (.jp-panel-headingbanner height) - 20px padding */
+}
+
+.JourneyPlannerInterfaceElement .jp-body.has-footer {
+	height: auto;
+}
+
+.jp-panel-content,
+.jp-body-journeyoptions {
+	padding-top: 24px;
+	padding-bottom: 16px;
+}
+
+.jp-body-panel-main {
+	visibility: visible;
+	-webkit-transition-delay:0;
+	transition-delay:0;
+}
+
+.jp-body-panel-main.is-visuallyhidden {
+	visibility: hidden;
+	-webkit-transition: visibility 0s linear 0.22s;
+	transition: visibility 0s linear 0.22s;
+}
+
+.jp-footer-journeyoptions {
+	margin-top: 8px;
+}
+
+.jp-panel-footer {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 1px solid #D7D2CB;
+}
+
+.jp-panel-footer.is-ontop {
+	position: absolute;
+	bottom: 0;
+	z-index: 0;
+}
+
+.jp-fromto {
+	position: relative;
+	z-index: 0;
+	padding-right: 30px;
+}
+/* -- End JP Form -- */
+
+/* -- Start JP Checkbox -- */
+.jp-checkbox-bulkaction {
+	margin: -12px 0;
+	padding: 12px 6px;
+}
+
+.jp-checkbox {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	padding: 8px 0;
+	text-align: left;
+}
+
+.jp-checkbox--input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+
+	background: transparent;
+}
+
+.jp-checkbox--label {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	width: 100%;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+
+.jp-checkbox--label > .jp-icon-transport,
+.jp-checkbox--label > .jp-checkbox--label-text {
+	vertical-align: middle;
+}
+
+.jp-checkbox--label > .jp-icon-transport {
+	width: 24px;
+	height: 24px;
+	background-size: 24px 24px;
+	margin-right: 6px;
+}
+
+.jp-checkbox--box {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	z-index: 0;
+	width: 11px;
+	height: 11px;
+	margin-top: -6.5px;
+	border: 1px solid #95989A;
+	background-color: #fff;
+}
+
+.jp-checkbox--input:hover ~ .jp-checkbox--box,
+.jp-checkbox--input:focus ~ .jp-checkbox--box {
+	background-color: #eee;
+}
+
+.jp-checkbox--input:checked ~ .jp-checkbox--box,
+.jp-checkbox--input:checked:hover ~ .jp-checkbox--box,
+.jp-checkbox--input:checked:focus ~ .jp-checkbox--box {
+	background-color: transparent;
+	border-color: transparent;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/tick.png');
+	background-repeat: no-repeat;
+	background-size: 11px 11px;
+}
+/* -- End JP Checkbox -- */
+
+/* -- Start JP Panel -- */
+.jp-panel-main {
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+
+	height: auto;
+	transition: 0.22s height;
+}
+
+/* Except on the JP page, we let it grow taller because of error messages that _may_ appear */
+body.HomePage .jp-panel-main {
+    height: 394px;
+	height: calc(465px - 71px);
+}
+
+.jp-panel {
+	position: relative;
+	z-index: 0;
+	display: none;
+}
+
+.jp-panel-page-content {
+	padding-left:10px;
+}
+
+.jp-panel.is-open {
+	display: block;
+}
+
+.jp-panel.is-ontop {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	bottom: 0;
+	z-index: 0;
+	width: 100%;
+
+	display: block;
+	visibility: hidden;
+	-webkit-transition: visibility 0s linear 0.22s, left 0.22s;
+	transition: visibility 0s linear 0.22s, left 0.22s;
+}
+
+.jp-panel.is-ontop.is-open {
+	left: 0;
+	margin-top: 0;
+
+	visibility: visible;
+	-webkit-transition-delay:0s;
+	transition-delay:0s;
+}
+
+.jp-panel-headingbanner {
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.jp-panel-headingbanner-journeyoptions-inner,
+.jp-arrdep {
+	border-bottom: 1px solid #C4C0BA;
+}
+
+.jp-panel-headingbanner-journeyoptions-inner {
+	padding-top: 19.5px;
+	padding-bottom: 19.5px;
+}
+
+.jp-panel-button-back,
+.jp-panel-heading {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.jp-panel-button-back {
+	padding: 16px 12px;
+	margin: -16px -4px;
+}
+
+.jp-panel-button-back .jp-icon {
+	vertical-align: bottom;
+}
+
+/* -- End JP Panel -- */
+
+/* -- Start JP Save / Star -- */
+.jp-saveAs,
+.jp-saveAs:hover,
+.jp-saveAs:focus {
+	position: relative;
+	left: 0;
+	top: 8px;
+	z-index: 0;
+	display: inline-block;
+	padding: 0;
+	background: none;
+}
+
+.jp-icon-star {
+	width: 16px;
+	height: 16px;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/star.png');
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/star.svg');
+	background-size: 16px 16px;
+}
+
+.myway-favourite .jp-icon-star {
+    background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/star-yellow.png');
+    background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/star-yellow.svg');
+}
+/* -- End JP Save / Star -- */
+
+/* -- Start JP Result Set Line Connector -- */
+.jp-transport-lineconnector-section {
+	position: relative;
+	z-index: 0;
+	text-align: center;
+}
+
+.jp-transport-lineconnector,
+.jp-transport-lineconnector--coverup {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	z-index: 0;
+	display: block;
+	height: 1000000px;
+}
+
+.jp-transport-lineconnector {
+	margin-left: -2px; /* size of 'border-width' */
+	border-width: 2px;
+	border-style: solid;
+	border-color: #333434;
+	box-sizing: border-box;
+}
+
+.jp-transport-lineconnector--coverup {
+	width: 6px;
+	margin-left: -2px;
+}
+
+.jp-transport-lineconnector:before {
+	content: " ";
+	position: absolute;
+	left: -8px;
+	top: -2px;
+	z-index: 0;
+	display: block;
+	width: 14px;
+}
+
+.jp-transport-lineconnector:before {
+	height: 8px;
+	border: 1px solid #333434;
+	background-color: #fff;
+	border-radius: 25px;
+}
+
+.jp-journeyresult-set-item:first-child .jp-transport-lineconnector:before,
+.jp-journeyresult-set-item:last-child .jp-transport-lineconnector:before {
+	left: -7px;
+	height: 0;
+	border: 0;
+	border-top: 4px solid #333434;
+	border-top-color: inherit;
+	border-radius: 0;
+}
+
+.jp-transport-lineconnector.jp-border--walk,
+.jp-transport-lineconnector.jp-border--cycle {
+	width: 6px;
+
+	border-color: transparent;
+	background-image: url('/web/20181001124921im_/https://www.ptv.vic.gov.au/themes/transport-site/images/jp-2017/transport-icons/walk-border.png');
+	background-repeat: repeat-y;
+	background-position: -2px 0;
+}
+
+.jp-journeyresult-set-item:last-child .jp-transport-lineconnector {
+	height: 12px;
+	background-color: transparent;
+}
+
+.jp-journeyresult-set-item:last-child .jp-transport-lineconnector:before {
+	top: 100%;
+}
+
+.jp-journeyresult-set-item:last-child .jp-transport-lineconnector.jp-border--walk,
+.jp-journeyresult-set-item:last-child .jp-transport-lineconnector.jp-border--cycle {
+	background: none;
+	border-color: transparent;
+}
+
+.jp-journeyresult-set-item:first-child .jp-transport-lineconnector.jp-border--walk:before,
+.jp-journeyresult-set-item:first-child .jp-transport-lineconnector.jp-border--cycle:before,
+.jp-journeyresult-set-item:last-child .jp-transport-lineconnector.jp-border--walk:before,
+.jp-journeyresult-set-item:last-child .jp-transport-lineconnector.jp-border--cycle:before {
+	border-color: #333434;
+}
+/* -- End JP Result Set Line Connector -- */
+
+/* -- Start JP Border Color (Line connector / autocomplete) -- */
+.jp-border--train {
+	border-color: #0072ce;
+}
+
+.jp-border--tram {
+	border-color: #78be43;
+}
+
+.jp-border--bus {
+	border-color: #F38020;
+}
+
+.jp-border--regional-train {
+	border-color: #8c288f;
+}
+
+.jp-border--regional-coach {
+	border-color: #a57fb2;
+}
+
+.jp-border--skybus {
+	border-color: #ec2027;
+}
+
+.jp-border--addresslandmark{
+	border-color: #333434;
+}
+/* -- End JP Border Color -- */
+
+/* -- Start JP Option / Result Set -- */
+.jp-journeyoption {
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	margin-top: 8px;
+}
+
+.jp-journeyresult-set-item {
+	position: relative;
+	z-index: 0;
+	padding-bottom: 48px;
+}
+
+
+p.jp-journeyresult-set-item-time.jp-depart-text {
+    margin-top: -1rem;
+}
+
+.jp-first-result p.jp-journeyresult-set-item-time.jp-depart-text {
+    margin-top: 0px;
+}
+
+
+h3.jp-disruption-warning {
+    margin: 3px 0;
+    color: #ef4c28;
+}
+
+.jp-journeyresult-set-item-time--clock {
+	font-size: 1.125em;
+	font-weight: bold;
+}
+
+.jp-journeyresult-title {
+	font-size: 18px;
+	font-size: 1.125em;
+    font-weight: bold;
+}
+
+.jp-journeyresult-icon {
+	display: inline-block;
+	margin-top: -10px;
+}
+
+.jp-journeyresult-set-item:first-child .jp-journeyresult-icon {
+	margin-top: -5px;
+}
+
+.jp-journeyoption .jp-smaller-font {
+    font-size: 75%;
+    margin: 4px 0;
+}
+
+.jp-alert {
+	background-color: transparent;
+}
+
+.alert.warning {
+    padding: 0.5em;
+    color: #c00;
+    font-weight: bold;
+}
+
+.jp-alert--leg {
+	margin-top: 56px;
+}
+
+.jp-alert--leg:before {
+	content: "";
+	display: block;
+	margin-bottom: 8px;
+}
+
+.jp-alert--status {
+	padding-top: 16px;
+}
+
+.jp-alert-heading > .jp-icon,
+.jp-alert-heading > span {
+	vertical-align: middle;
+}
+
+.jp-stopmap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 0;
+}
+
+
+.jp-journeyresult-set-item ol.journeySteps {
+    margin: 0px;
+    padding-left: 1rem;
+}
+
+.jp-travelicon {
+	margin-bottom: 8px;
+}
+
+.jp-travelicon-wrapper {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+}
+
+.jp-travelicon-wrapper > * {
+	vertical-align: middle;
+}
+
+.jp-travelicon .jp-icon-arrow-right {
+	margin: 0 8px;
+}
+
+.jp-travelicon:last-child .jp-icon-arrow-right {
+	display: none;
+}
+
+.jp-travelicon-list,
+.jp-arrdep,
+.jp-moreinfo,
+.jp-earlierlater,
+.jp-journeybutton {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.jp-arrdep {
+	padding-bottom: 16px;
+	margin-bottom: 0;
+}
+
+.jp-earlierlater {
+	padding-top: 16px;
+	margin-top: 0;
+}
+
+.jp-earlierlater-link {
+	text-decoration: none;
+}
+
+.jp-earlierlater-link > .jp-earlierlater-link--label {
+	margin-left: 8px;
+	margin-right: 8px;
+	text-decoration: underline;
+}
+
+.jp-earlierlater-link > .jp-earlierlater-link--label:first-child {
+	margin-left: 0;
+}
+
+.jp-journeybutton {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.jp-arrdep-time {
+	font-size: 1.125em;
+	font-weight: bold;
+}
+
+.jp-link-route-map.jp-link-route-map {
+	background-image: none;
+	text-decoration: none;
+}
+.jp-link-route-map--label {
+	display: inline-block;
+	margin-right: 8px;
+	text-decoration: underline;
+}
+/* -- End JP Result Set -- */
+
+/* -- Start HomePage connector -- */
+.function-panels {
+	padding-top: 20px;
+}
+
+.function-panels-inner {
+	position: relative;
+	z-index: 0;
+}
+
+.jp-headingbanner--connector {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	width: 635px;
+}
+
+.jp-heading-connector {
+	margin-left: 8px;
+}
+
+.jpmyki {
+	height: 465px;
+}
+
+.home-journey-planner,
+.functional-panel.jpnext5 {
+	height: calc(465px - 61px);
+	height: 404px;
+	padding-top: 64px;
+}
+
+.home-journey-planner .jp-headingbanner,
+.functional-panel.jpnext5 > .jp-headingbanner {
+	background-color: #fff;
+	color: #333;
+}
+
+.home-journey-planner .jp-icon-marker {
+	display: none;
+}
+
+@media (max-width: 651px) {
+	.function-panels {
+		padding-top: 0;
+	}
+
+	.jp-headingbanner--connector {
+		display: none;
+	}
+
+	.home-journey-planner,
+	.functional-panel.jpnext5 {
+		height: auto;
+		padding-top: 0;
+	}
+
+	.home-journey-planner .jp-headingbanner,
+	.functional-panel.jpnext5 > .jp-headingbanner {
+		background-color: #333434;
+		color: #fff;
+	}
+
+	body.HomePage .functional-panel,
+	body.HomePage .functional-panel.first {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	body.HomePage .functional-panel.first {
+		margin-top: 0;
+	}
+
+	.home-journey-planner .jp-icon-marker {
+		display: inline-block;
+	}
+}
+/* -- End HomePage connector -- */
+
+/* -- Start JP Grid System -- */
+.jp-row {
+  margin-left: -6px;
+  margin-right: -6px;
+  box-sizing: border-box;
+}
+.jp-row-smallgap {
+  margin-left: -8px;
+  margin-right: -8px;
+  box-sizing: border-box;
+}
+
+.jp-row-smallgap .jp-col-xs-6 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+.jp-col-xs-1, .jp-col-sm-1, .jp-col-md-1, .jp-col-lg-1, .jp-col-xs-2, .jp-col-sm-2, .jp-col-md-2, .jp-col-lg-2, .jp-col-xs-3, .jp-col-sm-3, .jp-col-md-3, .jp-col-lg-3, .jp-col-xs-4, .jp-col-sm-4, .jp-col-md-4, .jp-col-lg-4, .jp-col-xs-5, .jp-col-sm-5, .jp-col-md-5, .jp-col-lg-5, .jp-col-xs-6, .jp-col-sm-6, .jp-col-md-6, .jp-col-lg-6, .jp-col-xs-7, .jp-col-sm-7, .jp-col-md-7, .jp-col-lg-7, .jp-col-xs-8, .jp-col-sm-8, .jp-col-md-8, .jp-col-lg-8, .jp-col-xs-9, .jp-col-sm-9, .jp-col-md-9, .jp-col-lg-9, .jp-col-xs-10, .jp-col-sm-10, .jp-col-md-10, .jp-col-lg-10, .jp-col-xs-11, .jp-col-sm-11, .jp-col-md-11, .jp-col-lg-11, .jp-col-xs-12, .jp-col-sm-12, .jp-col-md-12, .jp-col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.jp-col-xs-1, .jp-col-xs-2, .jp-col-xs-3, .jp-col-xs-4, .jp-col-xs-5, .jp-col-xs-6, .jp-col-xs-7, .jp-col-xs-8, .jp-col-xs-9, .jp-col-xs-10, .jp-col-xs-11, .jp-col-xs-12 {
+  float: left;
+}
+.jp-col-xs-12 {
+  width: 100%;
+}
+.jp-col-xs-11 {
+  width: 91.66666667%;
+}
+.jp-col-xs-10 {
+  width: 83.33333333%;
+}
+.jp-col-xs-9 {
+  width: 75%;
+}
+.jp-col-xs-8 {
+  width: 66.66666667%;
+}
+.jp-col-xs-7 {
+  width: 58.33333333%;
+}
+.jp-col-xs-6 {
+  width: 50%;
+}
+.jp-col-xs-5 {
+  width: 41.66666667%;
+}
+.jp-col-xs-4 {
+  width: 33.33333333%;
+}
+.jp-col-xs-3 {
+  width: 25%;
+}
+.jp-col-xs-2 {
+  width: 16.66666667%;
+}
+.jp-col-xs-1 {
+  width: 8.33333333%;
+}
+.jp-col-xs-pull-12 {
+  right: 100%;
+}
+.jp-col-xs-pull-11 {
+  right: 91.66666667%;
+}
+.jp-col-xs-pull-10 {
+  right: 83.33333333%;
+}
+.jp-col-xs-pull-9 {
+  right: 75%;
+}
+.jp-col-xs-pull-8 {
+  right: 66.66666667%;
+}
+.jp-col-xs-pull-7 {
+  right: 58.33333333%;
+}
+.jp-col-xs-pull-6 {
+  right: 50%;
+}
+.jp-col-xs-pull-5 {
+  right: 41.66666667%;
+}
+.jp-col-xs-pull-4 {
+  right: 33.33333333%;
+}
+.jp-col-xs-pull-3 {
+  right: 25%;
+}
+.jp-col-xs-pull-2 {
+  right: 16.66666667%;
+}
+.jp-col-xs-pull-1 {
+  right: 8.33333333%;
+}
+.jp-col-xs-pull-0 {
+  right: auto;
+}
+.jp-col-xs-push-12 {
+  left: 100%;
+}
+.jp-col-xs-push-11 {
+  left: 91.66666667%;
+}
+.jp-col-xs-push-10 {
+  left: 83.33333333%;
+}
+.jp-col-xs-push-9 {
+  left: 75%;
+}
+.jp-col-xs-push-8 {
+  left: 66.66666667%;
+}
+.jp-col-xs-push-7 {
+  left: 58.33333333%;
+}
+.jp-col-xs-push-6 {
+  left: 50%;
+}
+.jp-col-xs-push-5 {
+  left: 41.66666667%;
+}
+.jp-col-xs-push-4 {
+  left: 33.33333333%;
+}
+.jp-col-xs-push-3 {
+  left: 25%;
+}
+.jp-col-xs-push-2 {
+  left: 16.66666667%;
+}
+.jp-col-xs-push-1 {
+  left: 8.33333333%;
+}
+.jp-col-xs-push-0 {
+  left: auto;
+}
+.jp-col-xs-offset-12 {
+  margin-left: 100%;
+}
+.jp-col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+.jp-col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+.jp-col-xs-offset-9 {
+  margin-left: 75%;
+}
+.jp-col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+.jp-col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+.jp-col-xs-offset-6 {
+  margin-left: 50%;
+}
+.jp-col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+.jp-col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+.jp-col-xs-offset-3 {
+  margin-left: 25%;
+}
+.jp-col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+.jp-col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+.jp-col-xs-offset-0 {
+  margin-left: 0%;
+}
+@media (min-width: 768px) {
+  .jp-col-sm-1, .jp-col-sm-2, .jp-col-sm-3, .jp-col-sm-4, .jp-col-sm-5, .jp-col-sm-6, .jp-col-sm-7, .jp-col-sm-8, .jp-col-sm-9, .jp-col-sm-10, .jp-col-sm-11, .jp-col-sm-12 {
+    float: left;
+  }
+  .jp-col-sm-12 {
+    width: 100%;
+  }
+  .jp-col-sm-11 {
+    width: 91.66666667%;
+  }
+  .jp-col-sm-10 {
+    width: 83.33333333%;
+  }
+  .jp-col-sm-9 {
+    width: 75%;
+  }
+  .jp-col-sm-8 {
+    width: 66.66666667%;
+  }
+  .jp-col-sm-7 {
+    width: 58.33333333%;
+  }
+  .jp-col-sm-6 {
+    width: 50%;
+  }
+  .jp-col-sm-5 {
+    width: 41.66666667%;
+  }
+  .jp-col-sm-4 {
+    width: 33.33333333%;
+  }
+  .jp-col-sm-3 {
+    width: 25%;
+  }
+  .jp-col-sm-2 {
+    width: 16.66666667%;
+  }
+  .jp-col-sm-1 {
+    width: 8.33333333%;
+  }
+  .jp-col-sm-pull-12 {
+    right: 100%;
+  }
+  .jp-col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .jp-col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .jp-col-sm-pull-9 {
+    right: 75%;
+  }
+  .jp-col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .jp-col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .jp-col-sm-pull-6 {
+    right: 50%;
+  }
+  .jp-col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .jp-col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .jp-col-sm-pull-3 {
+    right: 25%;
+  }
+  .jp-col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .jp-col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .jp-col-sm-pull-0 {
+    right: auto;
+  }
+  .jp-col-sm-push-12 {
+    left: 100%;
+  }
+  .jp-col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .jp-col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .jp-col-sm-push-9 {
+    left: 75%;
+  }
+  .jp-col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .jp-col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .jp-col-sm-push-6 {
+    left: 50%;
+  }
+  .jp-col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .jp-col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .jp-col-sm-push-3 {
+    left: 25%;
+  }
+  .jp-col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .jp-col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .jp-col-sm-push-0 {
+    left: auto;
+  }
+  .jp-col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .jp-col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .jp-col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .jp-col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .jp-col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .jp-col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .jp-col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .jp-col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .jp-col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .jp-col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .jp-col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .jp-col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .jp-col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .jp-col-md-1, .jp-col-md-2, .jp-col-md-3, .jp-col-md-4, .jp-col-md-5, .jp-col-md-6, .jp-col-md-7, .jp-col-md-8, .jp-col-md-9, .jp-col-md-10, .jp-col-md-11, .jp-col-md-12 {
+    float: left;
+  }
+  .jp-col-md-12 {
+    width: 100%;
+  }
+  .jp-col-md-11 {
+    width: 91.66666667%;
+  }
+  .jp-col-md-10 {
+    width: 83.33333333%;
+  }
+  .jp-col-md-9 {
+    width: 75%;
+  }
+  .jp-col-md-8 {
+    width: 66.66666667%;
+  }
+  .jp-col-md-7 {
+    width: 58.33333333%;
+  }
+  .jp-col-md-6 {
+    width: 50%;
+  }
+  .jp-col-md-5 {
+    width: 41.66666667%;
+  }
+  .jp-col-md-4 {
+    width: 33.33333333%;
+  }
+  .jp-col-md-3 {
+    width: 25%;
+  }
+  .jp-col-md-2 {
+    width: 16.66666667%;
+  }
+  .jp-col-md-1 {
+    width: 8.33333333%;
+  }
+  .jp-col-md-pull-12 {
+    right: 100%;
+  }
+  .jp-col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .jp-col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .jp-col-md-pull-9 {
+    right: 75%;
+  }
+  .jp-col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .jp-col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .jp-col-md-pull-6 {
+    right: 50%;
+  }
+  .jp-col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .jp-col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .jp-col-md-pull-3 {
+    right: 25%;
+  }
+  .jp-col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .jp-col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .jp-col-md-pull-0 {
+    right: auto;
+  }
+  .jp-col-md-push-12 {
+    left: 100%;
+  }
+  .jp-col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .jp-col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .jp-col-md-push-9 {
+    left: 75%;
+  }
+  .jp-col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .jp-col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .jp-col-md-push-6 {
+    left: 50%;
+  }
+  .jp-col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .jp-col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .jp-col-md-push-3 {
+    left: 25%;
+  }
+  .jp-col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .jp-col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .jp-col-md-push-0 {
+    left: auto;
+  }
+  .jp-col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .jp-col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .jp-col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .jp-col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .jp-col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .jp-col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .jp-col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .jp-col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .jp-col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .jp-col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .jp-col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .jp-col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .jp-col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .jp-col-lg-1, .jp-col-lg-2, .jp-col-lg-3, .jp-col-lg-4, .jp-col-lg-5, .jp-col-lg-6, .jp-col-lg-7, .jp-col-lg-8, .jp-col-lg-9, .jp-col-lg-10, .jp-col-lg-11, .jp-col-lg-12 {
+    float: left;
+  }
+  .jp-col-lg-12 {
+    width: 100%;
+  }
+  .jp-col-lg-11 {
+    width: 91.66666667%;
+  }
+  .jp-col-lg-10 {
+    width: 83.33333333%;
+  }
+  .jp-col-lg-9 {
+    width: 75%;
+  }
+  .jp-col-lg-8 {
+    width: 66.66666667%;
+  }
+  .jp-col-lg-7 {
+    width: 58.33333333%;
+  }
+  .jp-col-lg-6 {
+    width: 50%;
+  }
+  .jp-col-lg-5 {
+    width: 41.66666667%;
+  }
+  .jp-col-lg-4 {
+    width: 33.33333333%;
+  }
+  .jp-col-lg-3 {
+    width: 25%;
+  }
+  .jp-col-lg-2 {
+    width: 16.66666667%;
+  }
+  .jp-col-lg-1 {
+    width: 8.33333333%;
+  }
+  .jp-col-lg-pull-12 {
+    right: 100%;
+  }
+  .jp-col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .jp-col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .jp-col-lg-pull-9 {
+    right: 75%;
+  }
+  .jp-col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .jp-col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .jp-col-lg-pull-6 {
+    right: 50%;
+  }
+  .jp-col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .jp-col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .jp-col-lg-pull-3 {
+    right: 25%;
+  }
+  .jp-col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .jp-col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .jp-col-lg-pull-0 {
+    right: auto;
+  }
+  .jp-col-lg-push-12 {
+    left: 100%;
+  }
+  .jp-col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .jp-col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .jp-col-lg-push-9 {
+    left: 75%;
+  }
+  .jp-col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .jp-col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .jp-col-lg-push-6 {
+    left: 50%;
+  }
+  .jp-col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .jp-col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .jp-col-lg-push-3 {
+    left: 25%;
+  }
+  .jp-col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .jp-col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .jp-col-lg-push-0 {
+    left: auto;
+  }
+  .jp-col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .jp-col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .jp-col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .jp-col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .jp-col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .jp-col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .jp-col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .jp-col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .jp-col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .jp-col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .jp-col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .jp-col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .jp-col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+.jp-clearfix:before,
+.jp-clearfix:after,
+.jp-row:before,
+.jp-row:after {
+  content: " ";
+  display: table;
+}
+.jp-clearfix:after,
+.jp-row:after {
+  clear: both;
+}
+/* -- End JP Grid System -- */
+
+@media (max-width: 920px) {
+	.jp-wrapper-page {
+		margin-top: 0;
+	}
+
+	/* -- Journey Plan Page -- */
+	.jpform-col {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	/* -- End Journey Plan Page -- */
+}
+
+.jpform.jpform--is-page .jp-body.has-footer {
+	overflow: visible;
+	height: auto;
+}
+.jpform.jpform--is-page .jp-panel-footer.is-ontop {
+	position: static;
+}
+
+@media (max-width: 500px) {
+	.jp-body.has-footer {
+		overflow: visible;
+		height: auto;
+	}
+	.jp-panel-footer.is-ontop {
+		position: static;
+	}
+
+	.jp-block--arrdep {
+		padding-right: 0;
+	}
+
+	.jp-stopmap {
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+}
+/*
+.js-jp-panel-journeyoptions .journeyOption > li {
+	list-style:none;
+}
+
+.js-jp-panel-journeyoptions .journeyOption table {
+	width:100%;
+	border-bottom:1px solid #CCC;
+}
+
+.js-jp-panel-journeyoptions .journeyOption th {
+	vertical-align:top;
+	width:40px;
+}
+
+.js-jp-panel-journeyoptions .journeyOption th,
+.js-jp-panel-journeyoptions .journeyOption td {
+	padding:10px;
+}
+*/
+
+/*
+     FILE ARCHIVED ON 12:49:21 Oct 01, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:47:15 May 07, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.862
+  exclusion.robots: 0.103
+  exclusion.robots.policy: 0.091
+  cdx.remote: 0.067
+  esindex: 0.01
+  LoadShardBlock: 77.845 (3)
+  PetaboxLoader3.datanode: 119.378 (4)
+  load_resource: 84.173
+  PetaboxLoader3.resolve: 31.143
+*/

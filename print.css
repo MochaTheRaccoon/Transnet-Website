@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* no bg */
+html,
+body,
+#bg,
+#MapMenu,
+#legals {
+	background: #fff !important;
+}
+
+/* display none stuff */
+/* form, /* most forms are nogood for print */ 
+#header,
+#servicesNav,
+#sectionNav, 
+#footer,
+#legals .wrapper ul,
+#timetableNav,
+.aside,
+.saveAs,
+div#next5.functional-panel,
+div#lastUpdated,
+a.showMoreServices,
+#journeyPlannerPanel,
+div.editJourney
+{
+	display: none !important;
+}
+
+div#journeyPlannerPanel.noscriptJP {
+	display: block !important;
+}
+
+div.resultPane {
+	background: #fff !important;
+	border: none !important;
+	border-radius: none !important;
+	-moz-border-radius: none !important;
+	-webkit-border-radius: none !important;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+/* 100% width */
+#content {
+	width: 100% !important;
+}
+
+/*
+     FILE ARCHIVED ON 07:36:16 Sep 27, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:47:17 May 07, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.734
+  exclusion.robots: 0.093
+  exclusion.robots.policy: 0.083
+  cdx.remote: 0.063
+  esindex: 0.021
+  LoadShardBlock: 41.812 (3)
+  PetaboxLoader3.datanode: 73.049 (5)
+  load_resource: 315.705 (2)
+  PetaboxLoader3.resolve: 75.989 (2)
+*/
