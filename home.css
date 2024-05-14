@@ -1295,140 +1295,9 @@ body.HomePage #locationSelector .leavingFrom label.error, .HomePage #locationSel
 		display:none;
 	}
 }
-.hb {
-  background-color:#fff;
-  height:478px;
-  margin-right:2px;
-  width:calc(33.3333333333% - 1.3333333333px)
-}
-.hb.active .hb__heading {
-  background-image:inherit;
-  opacity:1;
-  text-indent:0px
-}
-.hb__heading-wrapper {
-  background-color:#434343;
-  height:60px
-}
-.hb__heading {
-  align-items:center;
-  background-image:none;
-  background-position:21.3px center;
-  background-repeat:no-repeat;
-  background-size:26px;
-  color:#fff;
-  display:flex;
-  font-family:"titillium-regular";
-  font-size:19px;
-  height:60px;
-  opacity:0;
-  padding-left:60px;
-  text-indent:-9999px;
-  transition:opacity .3s ease
-}
-.hb__heading span:not(.hb__legend) {
-  position:relative;
-  top:2px
-}
-.hb__heading.i-lines-white {
-  background-size:20px 26px;
-  padding-left:55px
-}
-.hb.active .hb__heading.i-lines-white {
-  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-lines.svg)
-}
-.hb.active .hb__heading.i-clock-white {
-  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-time-white.svg)
-}
-.hb.active .hb__heading.i-info-white {
-  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-info-white.svg)
-}
-.hb .hb__heading.i-arrow-white {
-  padding-left:19px
-}
-.hb .hb__heading.i-arrow-white span {
-  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-arrow-back.svg);
-  background-position:left center;
-  background-repeat:no-repeat;
-  background-size:14px;
-  cursor:pointer;
-  display:block;
-  padding-left:27px;
-  padding-top:2px;
-  transition:opacity .3s ease
-}
-.hb .hb__heading.i-arrow-white span:hover {
-  opacity:.7
-}
-.hb__legend {
-  cursor:pointer;
-  font-family:Calibri;
-  font-size:16px;
-  margin-left:auto;
-  margin-right:21px;
-  transition:color .3s ease
-}
-#lines__stations-departures .hb__legend {
-  opacity:0;
-  visibility:hidden;
-  pointer-events:none
-}
-.hb__legend svg {
-  max-width:6.3px;
-  position:relative;
-  top:1px;
-  right:-1px;
-  margin-left:2px
-}
-.hb__legend svg path {
-  fill:#fff;
-  transition:fill .3s ease
-}
-.hb__legend:hover {
-  color:#c4c4c4
-}
-.hb__legend:hover svg path {
-  fill:#c4c4c4
-}
-.hb__icon {
-  display:inline-block;
-  height:95px;
-  margin-bottom:7px;
-  width:95px
-}
-.hb__placeholder {
-  margin:0 auto;
-  max-width:210px;
-  padding-top:95px;
-  text-align:center
-}
-.hb.active .hb__placeholder {
-  display:none
-}
-.i-clock {
-  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-time.svg)
-}
-.i-info {
-  background-image:url(/web/20240101103646im_/https://ds12k1658w1f2.cloudfront.net/wp-content/themes/metrotrains/library/img/icon-info.svg)
-}
-.hb__content {
-  height:416px;
-  overflow:auto
-}
-.hb__stations {
-  display:none
-}
-.hb__place {
-  font-family:Calibri;
-  line-height:22px !important;
-  padding:20px !important
-}
-.hb__place:before {
-  display:none
-}
 /*
      FILE ARCHIVED ON 12:49:21 Oct 01, 2018 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 07:47:15 May 07, 2024.
+     INTERNET ARCHIVE ON 14:14:48 May 07, 2024.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -1436,13 +1305,13 @@ body.HomePage #locationSelector .leavingFrom label.error, .HomePage #locationSel
 */
 /*
 playback timings (ms):
-  captures_list: 0.526
-  exclusion.robots: 0.075
-  exclusion.robots.policy: 0.069
-  cdx.remote: 0.047
+  captures_list: 0.648
+  exclusion.robots: 0.149
+  exclusion.robots.policy: 0.139
+  cdx.remote: 0.061
   esindex: 0.008
-  LoadShardBlock: 123.382 (3)
-  PetaboxLoader3.datanode: 135.481 (4)
-  load_resource: 153.704
-  PetaboxLoader3.resolve: 94.104
+  LoadShardBlock: 191.692 (3)
+  PetaboxLoader3.datanode: 103.723 (4)
+  PetaboxLoader3.resolve: 132.527 (2)
+  load_resource: 93.204
 */
